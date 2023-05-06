@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/a-tachyons.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/anime.min.js"></script>
+    <title>Super Grid</title>
+</head>
+<body>
+
+    <!--the whole page stretch goes here-->
+    <div class="page min-vh-100 items-stretch flex flex-column flex-row-ns overflow-hidden-ns">
+        <!-- the 1st column goes here -->
+        <div class="w-100 vh-100 flex flex-wrap">
+            <!--the filmstripe animation goes here using translateX and overflow of hidden-->
+            <div class="w-100 h-50 bg-yellow conveyor-belt overflow-hidden box">
+                <div class="w-200 h-100 conveyor flex items-stretch">
+                    <div class="w-25 h-100 bg-red box"></div>
+                    <div class="w-25 h-100 bg-purple box"></div>
+                    <div class="w-25 h-100 bg-yellow box"></div>
+                    <div class="w-25 h-100 bg-blue box"></div>
+                    <div class="w-25 h-100 bg-red box"></div>
+                    <div class="w-25 h-100 bg-purple box"></div>
+                    <div class="w-25 h-100 bg-yellow box"></div>
+                    <div class="w-25 h-100 bg-blue box"></div>
+                </div>
+            </div>
+
+            <!--the wave code is below here -->
+            <div class="w-100 h-25 bg-blue box" id="wave">
+                <svg width="100%" height="100%" viewBox="0 0 988 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id="Page-1" stroke="#000" stroke-width="20px" fill="none" fill-rule="evenodd">
+                      <path d="M0,26.6660909 C12.4883576,26.6660909 19.222048,32.9380569 33.6965149,55.4085289 C42.7346868,69.4395802 47.113107,75.4370181 54.0606047,81.9082332 C64.1356961,91.2926314 75.8316529,96.3765857 89.8087275,96.3765857 C103.786637,96.3765857 115.483245,91.2924788 125.558911,81.9077498 C132.50679,75.4363207 136.885127,69.4391244 145.923176,55.4086804 C160.398343,32.9377877 167.131785,26.6660909 179.620122,26.6660909 C192.108158,26.6660909 198.84173,32.9376735 213.316498,55.4072796 C222.355505,69.4387937 226.734418,75.4365175 233.682717,81.907992 C243.75878,91.2925892 255.455814,96.3765857 269.434182,96.3765857 C283.412589,96.3765857 295.109765,91.2930071 305.186188,81.9090404 C312.134843,75.4379001 316.514052,69.4404507 325.552809,55.41099 C340.031281,32.9383038 346.766436,26.6660909 359.258909,26.6660909 C371.746946,26.6660909 378.480518,32.9376735 392.955286,55.4072796 C401.994293,69.4387937 406.373206,75.4365175 413.321505,81.907992 C423.397568,91.2925892 435.094602,96.3765857 449.07297,96.3765857 C463.051782,96.3765857 474.749223,91.2927145 484.82573,81.9082611 C491.774414,75.4368116 496.15359,69.4390839 505.192125,55.4091349 C519.668896,32.9377558 526.402956,26.6660909 538.892364,26.6660909 C551.383465,26.6660909 558.118132,32.9382215 572.594602,55.4091349 C581.633831,69.4401606 586.012777,75.4376061 592.961046,81.9087714 C603.037025,91.2928819 614.733795,96.3765857 628.711758,96.3765857 C642.690112,96.3765857 654.387126,91.2926041 664.463236,81.9080189 C671.4115,75.4366148 675.7901,69.4394147 684.828678,55.4089834 C699.304847,32.9378699 706.038777,26.6660909 718.528485,26.6660909 C731.019566,26.6660909 737.753983,32.9379522 752.231155,55.4092864 C761.270261,69.4397049 765.649123,75.4369088 772.597774,81.908288 C782.674327,91.2927293 794.371748,96.3765857 808.350546,96.3765857 C822.328953,96.3765857 834.026129,91.2930071 844.102552,81.9090404 C851.051207,75.4379001 855.430415,69.4404507 864.469173,55.41099 C878.947645,32.9383038 885.6828,26.6660909 898.175273,26.6660909 C910.667746,26.6660909 917.402901,32.9383038 931.880373,55.4094379 C940.92013,69.4404507 945.299339,75.4379001 952.247994,81.9090404 C962.324417,91.2930071 974.021593,96.3765857 988,96.3765857"></path>
+                    </g>
+                  </svg>
+            </div>
+
+            <!-- Rotating cross animation is below here -->
+            <div class="w-100 h-25 bg-red flex flex-wrap box pa3" id="crosses">
+                <div class="w-20 h-50 flex items-center justify-center">
+                    <svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M27.0904556,27.0904556 L44,27.0904556 L44,16.909748 L27.0904556,16.909748 L27.0904556,0 L16.909748,0 L16.909748,16.909748 L0,16.909748 L0,27.0904556 L16.909748,27.0904556 L16.909748,44 L27.0904556,44 L27.0904556,27.0904556 Z"
+                          id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+                      </g>
+                    </svg>
+                  </div>
+            </div>
+        </div>
+
+        <!--2nd column here-->
+        <div class="w-100 vh-100 flex flex-wrap">
+            <div class="w-100 h-25 bg-blue box flex justify-center items-center pa3 flex-wrap" id="title">
+                <div class="logo-cont">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="449.61" height="50.75" viewBox="0 0 449.61 50.75">
+                        <path id="Path_1" data-name="Path 1" d="M47.67-13.58c0-10.29-13.93-14.21-23.03-17.29-7.91-2.66-9.1-3.5-9.1-5.74,0-2.52,3.15-3.64,8.19-3.64,6.09,0,10.71,1.68,10.71,7.7h11.2c0-9.8-6.79-17.5-21.91-17.5-12.74,0-19.39,4.62-19.39,13.02,0,9.66,8.47,12.46,18.9,15.96,7.21,2.45,13.23,4.06,13.23,7.63,0,2.66-2.38,4.34-9.59,4.34-9.8,0-13.58-2.38-13.58-9.94H2.1C2.1-6.58,8.75.7,26.53.7,41.72.7,47.67-5.11,47.67-13.58Zm4.2-4.76C51.87-6.02,59.5.7,74.13.7S96.46-6.02,96.46-18.34V-49.35H85.26v26.04c0,8.82-.84,14.21-11.13,14.21S63.07-14.49,63.07-23.31V-49.35H51.87Zm68.6-31.01H102.76V0h11.2V-14.7h6.51c12.46,0,21.98-2.38,21.98-17.36C142.45-46.97,132.93-49.35,120.47-49.35Zm.7,24.85h-7.21V-39.55h7.21c6.65,0,10.08.7,10.08,7.49C131.25-25.2,127.82-24.5,121.17-24.5ZM148.05,0h35.21V-9.8H159.25V-19.81h20.51v-9.8H159.25v-9.94h24.01v-9.8H148.05Zm41.51,0h11.2V-17.36h19.32V0h11.2V-15.75c0-3.85-2.1-5.95-5.95-5.95h-7.21v-2.8c5.95-.7,12.53-2.94,12.53-11.06,0-11.06-10.22-13.79-21.98-13.79H189.56Zm11.2-27.16V-39.55h7.91c6.65,0,10.78,0,10.78,6.23,0,6.16-4.13,6.16-10.78,6.16Zm57.82,2.45C258.58-9.59,266.7.7,281.47.7c13.58,0,19.67-9.94,19.74-25.41h2.8l-2.1,7.7V0h11.2V-21.56c0-3.85-2.1-5.95-5.95-5.95H281.4v8.4h11.41c0,6.65-4.2,10.01-10.92,10.01-8.12,0-12.11-4.69-12.11-15.61,0-10.85,5.04-15.54,13.65-15.54,7.42,0,11.13,2.73,12.25,8.54h11.2c-1.47-10.78-11.06-18.34-23.45-18.34C269.15-50.05,258.58-39.76,258.58-24.71ZM318.71,0h11.2V-17.36h19.32V0h11.2V-15.75c0-3.85-2.1-5.95-5.95-5.95h-7.21v-2.8c5.95-.7,12.53-2.94,12.53-11.06,0-11.06-10.22-13.79-21.98-13.79H318.71Zm11.2-27.16V-39.55h7.91c6.65,0,10.78,0,10.78,6.23,0,6.16-4.13,6.16-10.78,6.16Zm70.42-12.39v-9.8h-33.6v9.8h11.2V-9.8h-11.2V0h33.6V-9.8h-11.2V-39.55Zm24.5-9.8h-18.2V0h18.2c13.16,0,26.88-3.43,26.88-24.71C451.71-45.92,437.99-49.35,424.83-49.35Zm0,39.55h-7V-39.55h7c8.75,0,15.68.7,15.68,14.84C440.51-10.5,433.58-9.8,424.83-9.8Z" transform="translate(-2.1 50.05)"/>
+                    </svg>
+                    <p class="lower-text">Made with Tachyons & Anime.js by Ridwan</p>
+                </div>
+            </div>
+            <div class="w-100 h-25 bg-red box flex flex-wrap justify-around items-center pa3" id="dots">
+                <div class="w-10">
+                    <div class="dot center"></div>
+                </div>
+            </div>
+            <div class="w-100 h-50 bg-yellow tunnel box" id="tunnel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 400 400">
+                    <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#000" stroke-width="10">
+                      <circle cx="200" cy="200" r="10%"/>
+                      <circle cx="200" cy="200" r="20%"/>
+                      <circle cx="200" cy="200" r="30%"/>
+                      <circle cx="200" cy="200" r="40%"/>
+                      <circle cx="200" cy="200" r="50%"/>
+                      <circle cx="200" cy="200" r="60%"/>
+                      <circle cx="200" cy="200" r="70%"/>
+                      <circle cx="200" cy="200" r="80%"/>
+                      <circle cx="200" cy="200" r="90%"/>
+                      <circle cx="200" cy="200" r="100%"/>
+                      <circle cx="200" cy="200" r="110%"/>
+                      <circle cx="200" cy="200" r="120%"/>
+                    </g>
+                  </svg>
+            </div>
+        </div>
+        <!--third column-->
+        <div class="w-100 vh-100 flex flex-wrap">
+            <div class="w-100 h-50 bg-purple pa3 box" id="zigzag">
+                <svg id="Group_2" data-name="Group 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 498 495">
+                    <defs></defs>
+                    <g id="Group_1" data-name="Group 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <path id="Path_1" data-name="Path 1" d="M496.8,5,.195,24.36,496.8,43.722.195,63.086,496.8,82.452.195,101.817,496.8,121.18.195,140.544l496.6,19.365L.195,179.274l496.6,19.367L.195,218.007l496.6,19.366L.195,256.739,496.8,276.1.195,295.465l496.6,19.368L.195,334.2l496.6,19.366L.195,372.93,496.8,392.3.195,411.668l496.6,19.369L.195,450.407,496.8,469.78.195,489.152" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+                    </g>
+                  </svg>
+            </div>
+            <div class="w-100 h-25 flex flex-wrap">
+                <div class="w-50 h-50 bg-blue box flashing-box"></div>
+                <div class="w-50 h-50 bg-red box flashing-box"></div>
+                <div class="w-50 h-50 bg-purple box flashing-box"></div>
+                <div class="w-50 h-50 bg-yellow box flashing-box"></div>
+            </div>
+            <!--flashing circles-->
+            <div class="w-50 h-25 bg-blue box flex flex-wrap justify-around items-center pa3" id="circles">
+                <div class="w-20">
+                    <div class="circle br-100 center"></div>
+                </div>
+            </div>
+            <div class="w-50 h-25 bg-purple box square-cont overflow-hidden " id="square-cont">
+               <div class="rect-cont">
+                   <div class="w-25 h-25 rect"></div>
+                   <div class="w-50 h-50 rect"></div>
+                   <div class="w-75 h-75 rect"></div>
+                   <div class="w-100 h-100 rect"></div>
+                   <div class="w-125 h-125 rect"></div>
+                   <div class="w-150 h-150 rect"></div>
+               </div>
+                  
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+  
